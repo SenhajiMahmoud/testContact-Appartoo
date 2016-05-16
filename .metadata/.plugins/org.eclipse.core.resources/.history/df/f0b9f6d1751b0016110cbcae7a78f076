@@ -1,0 +1,8 @@
+<?php 		
+		include 'lib/Database.php';
+		include 'lib/ViewCom.php';
+		
+		$db = new Database("localhost", "pizzeria", "root", "");
+		$req = $db->AfficherComm("carnetadresse");
+		$rs = $req->fetchAll();
+?>

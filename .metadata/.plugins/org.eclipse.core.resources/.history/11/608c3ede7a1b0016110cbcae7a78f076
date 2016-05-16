@@ -1,0 +1,12 @@
+<?php
+		include 'lib/Database.php';
+		include 'lib/Viewcontact.php';
+	
+		$db = new Database($host, $source, $user, $password)
+		
+		$db->chercher($tableName, $name);
+
+		$d = new View();
+		$d->table($req);
+		
+?>

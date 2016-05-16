@@ -1,0 +1,14 @@
+<?php
+		include 'lib/Database.php';
+		include 'lib/Viewcontact.php';
+	
+		$db = new Database("localhost", "carnet", "root", "");
+		
+		$nom = $_POST['nom'];
+		
+		$req = $db->chercher("carnetadresse", $nom);
+		
+		$d = new View();
+		$d->table($req);
+		
+?>

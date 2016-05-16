@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Inscription</title>
+</head>
+<body>	
+	
+    <h3>Inscription</h3>
+    
+    <form id="Inscr-form" action="InscReussi.php" method="post">
+        <div>
+         <div >
+            <div >Nom:</div>
+		            <label class="name" >
+		              <input id="name" class="input1" type="text" name="nom" size="50">
+		            </label>
+          </div>
+
+          <div>
+            <div >Telephone:</div>
+	            <label>
+	              <input id="tel" class="input1" type="tel" name="tel" size="50">
+	             </label>
+          </div>
+          
+            <div class="form-txt">E-mail:</div>
+            <label class="email">
+              <input id="email" class="input1" type="email" name="email" size="50">
+            </label>
+            </div>
+          
+          
+            <div class="form-txt">Adresse</div>
+            <label class="adresse">
+              <input id="adresse" class="input1" name="adresse" size="50">
+            </label>
+          
+          
+            <div >Mot de Passe:</div>
+	            <label >
+	              <input id="pass" type="password" name="pass" size="50">
+	               
+	            </label>
+            <div class="clear"></div>
+          
+        <div class="btns"> 
+        	<input value="Clear" type="reset" id="clear">
+        	<input value="valider" type="submit" id="envoyer">
+        </div>
+        
+    </form>
+  
+</section>
+
+</body>
+</html>

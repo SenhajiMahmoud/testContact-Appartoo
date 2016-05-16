@@ -1,0 +1,38 @@
+<html>
+<body>
+
+
+<?php 
+	include 'classes/user.php';
+	include 'lib/Database.php';
+	
+	$client = new Client($_POST['nom'], $_POST['email'], $_POST['tel'], $_POST['pass'], $_POST['adresse']);
+	
+	$nom = $client->getNom();
+	$tel = $client->getTel();
+	$Email = $client->getEmail();
+	$adresse = $client->getAdresse();
+	$password = $client->getMotPasse();
+	
+	
+	?>
+	
+<?php 
+//		$pass = $_GET['pass'];
+//		$nom = $_GET['Nom'];
+//		$tel = $_GET['tel'];
+//		$Email = $_GET['EMail'];
+//		$adresse = $_GET['adresse'];
+		
+		$db = new Database("localhost", "carnet", "root", "");
+		
+		$res = $db->inscription("user",$nom,$Email,$tel,$adresse,$pass);
+		$db->InscrLoginn($Email,$pass);
+		
+		
+		
+		header("location: Index.php");
+?>
+
+</body>
+</html>

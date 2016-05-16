@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<body>
+	<form action="ChercherContact.php" method="post">
+		<table>
+			<tr>
+				<td>Le Nom du contact que vous voulez supprimer:</td>
+				<td> <input type="text" name="nom" size="50"/> </td>
+			</tr>
+		</table>
+		<input type="submit" value="Chercher">
+	</form>
+</body>
+</html>

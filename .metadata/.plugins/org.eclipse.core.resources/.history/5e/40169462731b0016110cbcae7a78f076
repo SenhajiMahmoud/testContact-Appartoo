@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<body>	
+	
+  <div >
+    
+    <form id="Inscr-form" action="addcontact.php" method="post">
+        <div>
+            
+            
+         <div>
+            <div class="form-txt">Nom:</div>
+	            <div class="padEsp">
+		            <label class="name" >
+		              <input id="name" class="input1" type="text" name="nom" size="50">
+		            </label>
+	            </div>
+            <div class="clear"></div>
+          </div>
+          
+          
+            <div class="form-txt">Telephone:</div>
+             <div class="padEsp">
+	            <label class="phone">
+	              <input id="tel" class="input1" type="tel" name="tel" size="50">
+	             </label>
+             </div>
+          	
+          	 <div class="form-txt">Adresse:</div>
+             <div class="padEsp">
+	            <label class="phone">
+	              <input id="tel" class="input1" name="tel" size="50">
+	             </label>
+             </div>
+          	
+        <div> 
+        	<input value="valider" type="submit" id="envoyer">
+        </div>
+        
+    </form>
+  </div>
+  
+</section>
+
+</body>
+</html>

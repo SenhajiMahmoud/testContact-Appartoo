@@ -1,0 +1,10 @@
+<?php
+		include 'lib/Database.php';
+		include 'lib/Viewcontact.php';
+	
+		chercher($tableName, $name);
+
+		$d = new View();
+		$d->table($req);
+		
+?>

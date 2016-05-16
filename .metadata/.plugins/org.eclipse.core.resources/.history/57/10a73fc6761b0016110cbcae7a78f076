@@ -1,0 +1,24 @@
+<?php
+class View{
+	
+public static function table($req){
+	echo "<html>";
+	echo "<body>";
+	$rs = $req;
+	echo count($rs) . " contact";
+	echo "<table>";
+	foreach ($rs as $k){
+				echo "<div>";
+					echo "<span>" .$k['nom'] . "</span>" . "</br>";
+					echo "<span>" . $k['adresse']. "</span>" . "</br>";
+					echo "<span>" . $k['tel']. "</span>" . "</br>";
+				echo "<div>";
+				
+	}	
+	echo "</table>";
+	echo "</div>";
+	echo "</html>";
+	echo "</body>";
+	}
+}
+?>

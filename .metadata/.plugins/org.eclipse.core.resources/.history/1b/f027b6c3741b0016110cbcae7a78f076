@@ -1,0 +1,31 @@
+<html>
+<body>
+
+
+<?php 
+	include 'classes/carnetAdr.php';
+	include 'lib/Database.php';
+	
+	$carnetAdr = new carnetAdr($_POST['nom'], $_POST['tel'], $_POST['adresse']);
+	
+	$nom = $carnetAdr->getNom();
+	$tel = $carnetAdr->getTel();
+	$adresse = $carnetAdr->getAdresse();
+	
+	echo $nom; 
+	
+	?>
+	
+<?php 
+		
+		$db = new Database("localhost", "carnet", "root", "");
+		
+		$res = $db->addContact($tablename, $tel, $nom, $adresse)("carnetadresse",$tel,$adresse ,$nom);
+		
+		
+		
+//		header("location: Index.php");
+?>
+
+</body>
+</html>

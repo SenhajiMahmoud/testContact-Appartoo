@@ -1,0 +1,22 @@
+<html>
+<body>
+
+
+<?php 
+	include 'classes/Client.php';
+	include 'lib/Database.php';
+	
+	$client = new Client($_POST['nom'], $_POST['email'], $_POST['tel'], $_POST['pass'], $_POST['adresse']);
+	
+	$nom = $client->getNom();
+	$tel = $client->getTel();
+	$Email = $client->getEmail();
+	$adresse = $client->getAdresse();
+	$password = $client->getMotPasse();
+	
+	
+	?>
+		<h3><?php echo $nom; ?> </h3>	
+
+</body>
+</html>
